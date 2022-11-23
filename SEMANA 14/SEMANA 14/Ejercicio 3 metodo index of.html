@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>METODO OF</title>
+</head>
+<body>
+    <center>
+    <h1>METODO INDEX OF</h1>
+    <h3>BUSQUEDA ELEMENTOS EN ARRAY</h3>
+    <p id="std"></p>
+    <script>
+        let students=["Alexys", "Jon", "Daniel", "Francisco","Dario", "José","Alvaro"];
+        for (i=0;i<students.length;i++){
+if (students[i].toUpperCase().indexOf("A")===0){
+console.log(students[i]);
+document.write(students[i]+"<br>");
+}
+        }
+        let datob=prompt("ingrese nombre STD a buscar");
+        let index=students.indexOf(datob);
+        document.write("Estudiante se encuentra en el indice No.");
+        document.getElementById("std").innerHTML=index;
+        </script>
+    </center>
+</body>
+</html>
